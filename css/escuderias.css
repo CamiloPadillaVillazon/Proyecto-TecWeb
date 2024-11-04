@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../Img/fondo-principal.avif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    background-color: rgba(30, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 10px 20px;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header img{
+    width: 140px;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.header nav{
+    display: flex;
+}
+
+.header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    margin-right: 40px;
+    margin-right: 120px;
+}
+
+.header a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.block-principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.block-principal h2{
+    background-color: gainsboro;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 40px;
+}
+
+.primer-grupo, .segundo-grupo, .tercer-grupo, .cuarto-grupo, .quinto-grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.mclaren-scuderia, .ferrari-scuderia, .redbull-scuderia, .mercedes-scuderia,
+.aston-scuderia, .alpine-scuderia, .haas-scuderia, .rb-scuderia, .williams-scuderia, .kick-scuderia {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.mclaren-scuderia img, .ferrari-scuderia img, .redbull-scuderia img, .mercedes-scuderia img , .aston-scuderia img, .alpine-scuderia img, 
+.haas-scuderia img, .rb-scuderia img, .williams-scuderia img, .kick-scuderia img{
+    max-width: 600px;
+    max-height: 350PX;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mclaren-scuderia p, .ferrari-scuderia p, .redbull-scuderia p, .mercedes-scuderia p , .aston-scuderia p, .alpine-scuderia p, 
+.haas-scuderia p, .rb-scuderia p, .williams-scuderia p, .kick-scuderia p{
+    text-align: center;
+    padding: 10px;
+    text-align: center;
+    max-width: 620px;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.mclaren-scuderia a, .ferrari-scuderia a, .redbull-scuderia a, .mercedes-scuderia a , .aston-scuderia a, .alpine-scuderia a, 
+.haas-scuderia a, .rb-scuderia a, .williams-scuderia a, .kick-scuderia a{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.quinto-grupo{
+    margin-bottom: 50px;
+}
+
+.block-principal hr{
+    width: 95%; 
+    height: 10px;
+    background-color: gainsboro;
+    border: none;
+    margin: 20px auto; 
+}
+
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer img{
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
+
+.links, .redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li{
+    margin-right: 20px;
+}
+
+.links a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: flex; 
+    align-items: center;
+}
+
+.redes-sociales a {
+    font-size: 20px; 
+    margin: 0; 
+    color: white;
+    display: flex; 
+    align-items: center;
+}
+
+.footer hr {
+    width: 100%; 
+    border: 2.5px solid #ccc; 
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+
+
+
+
+
+
+
+
+
+
+
