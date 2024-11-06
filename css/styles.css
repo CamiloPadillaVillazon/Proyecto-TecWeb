@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    z-index: 10;
 }
 
 #logof1 {
@@ -43,9 +44,9 @@ body {
 
 .header a {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-}
+} 
 
 /* Subscribe Section */
 .subscribe {
@@ -339,3 +340,90 @@ body {
     margin: 20px 0; /* Espacio superior e inferior */
 }
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .first-base {
+        padding-top: 100px; 
+        gap: 150px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .header ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    #email, #button-subscribe {
+        width: 100%;
+    }
+
+    .block1 {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .block2, .block3, .block4 {
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    .elementosf1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gp-f1, .escuderias, .pilotos {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .momentos-iconicos {
+        flex-direction: column;
+    }
+
+    .primer-video, .segundo-video, .tercer-video, .cuarto-video {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    #parrafo1, #parrafo2 {
+        font-size: 18px; 
+    }
+
+    .block1 p {
+        font-size: 25px;
+    }
+
+    .block2 h2, .block3 h2, .block4 h2 {
+        font-size: 28px; 
+    }
+
+    .gp-f1 img, .escuderias img, .pilotos img {
+        height: 300px; 
+    }
+
+    .michael-schumacher h4, .lewis-hamilton h4, .manuel-fangio h4 {
+        font-size: 18px; 
+        margin-top: 380px;
+    }
+
+    .michael-schumacher p, .lewis-hamilton p, .manuel-fangio p {
+        font-size: 12px; 
+    }
+
+    .footer img {
+        width: 120px; 
+    }
+
+    .links a {
+        font-size: 16px; 
+    }
+}
