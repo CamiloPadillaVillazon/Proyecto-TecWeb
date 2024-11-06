@@ -3,7 +3,6 @@ body {
     padding: 0;
 }
 
-/* Container principal */
 .first-base {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Img/McLaren.jpeg);
     background-size: cover;
@@ -14,10 +13,10 @@ body {
     align-items: center;
     padding-top: 280px; 
     gap: 270px;
-    background-attachment: fixed; /* la imagen de fondo no se desplace con el contenido */
+    background-attachment: fixed;
 }
 
-/* Header */
+
 .header {
     position: fixed;
     top: 0;
@@ -28,7 +27,6 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    z-index: 10;
 }
 
 #logof1 {

@@ -69,28 +69,50 @@ body{
 
 .mclaren-scuderia, .ferrari-scuderia, .redbull-scuderia, .mercedes-scuderia,
 .aston-scuderia, .alpine-scuderia, .haas-scuderia, .rb-scuderia, .williams-scuderia, .kick-scuderia {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: auto; */
+
     display: flex;
     flex-direction: column;
     align-items: center; 
-    width: 100%;
+    width: auto;
+    justify-content: space-between; /* Asegura que los elementos tengan espacio entre sí */
+    min-height: 500px; 
 }
 
 .mclaren-scuderia img, .ferrari-scuderia img, .redbull-scuderia img, .mercedes-scuderia img , .aston-scuderia img, .alpine-scuderia img, 
 .haas-scuderia img, .rb-scuderia img, .williams-scuderia img, .kick-scuderia img{
-    max-width: 600px;
+    /* max-width: 600px;
     max-height: 350PX;
+    width: 100%;
+    margin-bottom: 10px; */
+    max-width: 600px;
+    max-height: 350px;
     width: 100%;
     margin-bottom: 10px;
 }
 
 .mclaren-scuderia p, .ferrari-scuderia p, .redbull-scuderia p, .mercedes-scuderia p , .aston-scuderia p, .alpine-scuderia p, 
 .haas-scuderia p, .rb-scuderia p, .williams-scuderia p, .kick-scuderia p{
-    text-align: center;
+    /* text-align: center;
     padding: 10px;
     text-align: center;
     max-width: 620px;
     background-color: gainsboro;
+    border-radius: 10px; */
+
+    text-align: center;
+    padding: 10px;
+    max-width: 620px;
+    background-color: gainsboro;
     border-radius: 10px;
+    flex-grow: 1; /* Hace que los párrafos crezcan y ocupen el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra el texto dentro del párrafo */
+    align-items: center; /* Centra el texto verticalmente */
+    padding: 0;
 }
 
 .mclaren-scuderia a, .ferrari-scuderia a, .redbull-scuderia a, .mercedes-scuderia a , .aston-scuderia a, .alpine-scuderia a, 
@@ -162,13 +184,10 @@ body{
 .footer hr {
     width: 100%; 
     border: 2.5px solid #ccc; 
-    margin: 20px 0; /* Espacio superior e inferior */
+    margin: 20px 0;
 }
 
 
-
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -177,78 +196,78 @@ body{
     }
 
     .header img {
-        margin-left: 0; /* Ajuste para alineación en dispositivos pequeños */
+        margin-left: 0; 
     }
 
     .header ul {
         flex-direction: column;
         gap: 10px;
-        margin-right: 0; /* Ajuste de márgenes en móviles */
+        margin-right: 0; 
     }
 
     .block-principal h2 {
-        font-size: 32px; /* Tamaño de fuente reducido */
-        width: 80%; /* Ancho aumentado para móviles */
+        font-size: 32px; 
+        width: 80%; 
     }
 
     .primer-grupo, .segundo-grupo, .tercer-grupo, .cuarto-grupo, .quinto-grupo {
-        flex-direction: column; /* Cambia a columna en móviles */
+        flex-direction: column; 
         align-items: center;
     }
 
     .mclaren-scuderia img, .ferrari-scuderia img, .redbull-scuderia img, .mercedes-scuderia img,
     .aston-scuderia img, .alpine-scuderia img, .haas-scuderia img, .rb-scuderia img,
     .williams-scuderia img, .kick-scuderia img {
-        max-width: 90%; /* Reduce el ancho de las imágenes */
-        max-height: 200px; /* Ajuste de altura en móviles */
+        max-width: 90%; 
+        max-height: 200px; 
     }
 
     .mclaren-scuderia p, .ferrari-scuderia p, .redbull-scuderia p, .mercedes-scuderia p,
     .aston-scuderia p, .alpine-scuderia p, .haas-scuderia p, .rb-scuderia p,
     .williams-scuderia p, .kick-scuderia p {
-        font-size: 14px; /* Tamaño de fuente reducido */
+        font-size: 14px; 
     }
 
     .footer img {
-        width: 120px; /* Reduce el tamaño del logo en móviles */
+        width: 120px; 
     }
 
     .links a {
-        font-size: 16px; /* Tamaño de fuente reducido */
+        font-size: 16px; 
     }
 
     .redes-sociales a {
-        font-size: 18px; /* Tamaño de fuente reducido */
+        font-size: 18px; 
     }
 }
 
 @media (max-width: 480px) {
     .block-principal h2 {
-        font-size: 28px; /* Tamaño de fuente aún más reducido */
+        font-size: 28px; 
     }
 
     .mclaren-scuderia img, .ferrari-scuderia img, .redbull-scuderia img, .mercedes-scuderia img,
     .aston-scuderia img, .alpine-scuderia img, .haas-scuderia img, .rb-scuderia img,
     .williams-scuderia img, .kick-scuderia img {
-        max-height: 150px; /* Ajuste de altura para pantallas pequeñas */
+        max-height: 150px; 
     }
 
     .mclaren-scuderia p, .ferrari-scuderia p, .redbull-scuderia p, .mercedes-scuderia p,
     .aston-scuderia p, .alpine-scuderia p, .haas-scuderia p, .rb-scuderia p,
     .williams-scuderia p, .kick-scuderia p {
-        font-size: 12px; /* Tamaño de fuente muy reducido */
+        font-size: 12px; 
     }
 
     .footer img {
-        width: 100px; /* Tamaño de logo en pantallas muy pequeñas */
+        width: 100px; 
     }
 
     .links a {
-        font-size: 14px; /* Tamaño de fuente muy reducido */
+        font-size: 14px; 
     }
 
     .redes-sociales a {
-        font-size: 16px; /* Tamaño de fuente muy reducido */
+        font-size: 16px; 
     }
 }
 
